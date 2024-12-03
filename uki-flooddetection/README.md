@@ -6,13 +6,19 @@ Public notebooks and utilities for running inference and fine tuning
 ## Setup
 1. clone the repository: 
 ```sh
-git clone ... TODO - fill when ready
+git clone https://github.com/ibm-granite/geospatial.git
 ```
 2. Set up a virtual environment. Python 3.10 is recommended.
 3. Activate the virtual environment. 
 4. Install the relevant packages. This will depend on where you're running the notebooks.
-  - on Google Colab `pip install -e .[colab]` TODO - confirm when ready
-  - on local machine `pip install -e .[notebooks]` (slightly different notations may be needed, depending on the set-up on your machine e.g. `pip install -e ."[notebooks]"`)
+  - on Google Colab `pip install -e ./geospatial/uki-flooddetection[colab]` 
+  - on local machine 
+      ```
+      cd geospatial/uki-flooddetection
+      
+      pip install -e .[notebooks]
+      ```
+      please note: depending on the set-up on your machine, slightly different notations may be needed e.g. `pip install -e ."[notebooks]"`
 
 ## Notebooks 
 We have two notebooks available. 
